@@ -1,9 +1,17 @@
+<script>
+export default {
+  data() {
+    return { showContent: false }
+  }
+}
+</script>
+
 <template>
   <Head>
     <Title>Simon Lang: Pretty good web programmer, Brisbane, Australia</Title>
   </Head>
   <main>
-    <div id="content">
+    <div id="splash" class="reveal" v-if="!showContent">
       <img
         src="https://avatars.githubusercontent.com/u/339630?v=4"
         class="avatar"
@@ -20,6 +28,10 @@
         <li>Proud father of twin girls</li>
         <li>Want to chat? <a href="mailto:simon@lang.au">simon@lang.au</a></li>
       </ul>
+      <button v-if="hidden" @click="showContent = true" class="hidden">Show content</button>
+    </div>
+    <div id="content" class="reveal" v-if="showContent">
+      <h1>Content!</h1>
     </div>
   </main>
 </template>
@@ -60,9 +72,12 @@ main {
   margin: 0 auto;
   max-width: 680px;
 }
-#content {
+#splash {
   padding: 2rem;
   background: rgba(0, 0, 0, 0.1);
+}
+.reveal {
+  opacity: 0;
   animation: reveal 375ms 375ms ease forwards;
 }
 h1 {
@@ -82,7 +97,7 @@ li {
 @keyframes reveal {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
