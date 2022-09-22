@@ -20,7 +20,8 @@
 
 <style>
 body {
-  background: #182948;
+  background: rgb(24,41,72);
+  background: linear-gradient(159deg, rgba(24,41,72,1) 0%, rgba(9,73,108,1) 100%);
   color: #ddd;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   line-height: 1.4;
