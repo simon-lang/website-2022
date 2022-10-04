@@ -22,7 +22,7 @@ export default {
         <li>Over 15 years experience across diverse industries</li>
         <li>Language/framework agnostic</li>
         <li>Strong product focus</li>
-        <li>Located in Brisbane but working remote since 2006</li>
+        <li>Located in Brisbane but working remote since 2016</li>
         <li>Bachelor of Software Engineering</li>
         <li>Easy to get along with, love my job</li>
         <li>Proud father of twin girls</li>
